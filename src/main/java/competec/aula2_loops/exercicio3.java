@@ -3,17 +3,16 @@ package competec.aula2_loops;
 import java.util.Scanner;
 
 public class exercicio3 {
+    public static void main(String[] args) {
     Scanner leia = new Scanner(System.in);
-    int num, mult;
+    int num, mult, resut;
 
-    System.out.println("Digite um número: ");
+    System.out.println("Digite o número da tabuada");
     num = leia.nextInt();
     
-    for (num =>1; num < 10; ){
-        System.out.println("Sua senha está incorreta porfavor digite novamente");
-    num = leia.nextInt();
-    }
-    System.out.println("Sua senha está correta");
-        
-    }
+    for (mult = 1; mult<=10 ; mult++){
+        resut = num * mult;
+        System.out.println("o resultado da multiplicação por: " + mult + " é igual à: " + resut);
+        }
+    }        
 }

@@ -7,7 +7,7 @@ public class exercicio4 {
             Scanner leia = new Scanner(System.in);
             int num;
         
-            System.out.println("Digite um número");
+            System.out.println("Digite um número no qual listaremos os impares até ele");
             num = leia.nextInt();
             
             for (int imp = 1 ; imp<=num ; imp += 2){

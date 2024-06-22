@@ -4,15 +4,32 @@ import java.util.Scanner;
 
 public class RevisaoArranjo {
     public static void main (String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        int numeros[] = new int[10];
-        int maior, menor;
+        Scanner leia = new Scanner(System.in);
+        int numeros[] = new int [10];
+        int maior;
+        int menor;
+        int maior1=0;
+        int menor1=0;
 
-        maior = menor = numeros[0] = scanner.nextInt(); //lê o primeiro valor do vetor e o inicializa como maior e menor até o momento
+        for(int i=0;i<=9;i++) {
+            System.out.println("Digite um valor para o seu arranjo: ");
+            numeros[i]=leia.nextInt();
+            System.out.println(numeros[i]);
+        }
+        menor=numeros[0];
+        maior=numeros[0];
+            for(int k=0;k<=9;k++) {
+                if(maior<numeros[k]) {
+                    maior1=numeros[k];
+                }
+            }
+                    for(int m=0;m<=9;m++) {
+                        if(menor>numeros[m]) {
+                            menor1=numeros[m];                    
+                         } 
+                        }
+                        System.out.println(maior1);
+                        System.out.println(menor1);
 
-        //Insira aqui o código para ler os números do vetor e encontrar o maior e menor valores
-
-        System.out.println("Maior: " + maior);
-        System.out.println("Menor: " + menor);
     }
 }
